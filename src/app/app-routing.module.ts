@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+
 import { StarterAppComponent } from './starter-app/starter-app.component';
+import { DashboardComponent } from './dashboard/dashboard.component'
+import { DmComponent } from './dm/dm.component';
+import { PlayerComponent } from './player/player.component';
 
 const routes: Routes = [
+  { path: 'home', component: DashboardComponent },
+  { path: 'dm', component: DmComponent },
+  { path: 'player', component: PlayerComponent },
   { path: 'starter-app', component: StarterAppComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
