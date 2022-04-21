@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>
+    Actions in Combat
+  </mat-card-title>
+  <mat-card-content>
+    <div *ngFor="let action of actions | async">
+      <h2>{{action.action}}</h2>
+      <p>{{action.description}}</p>
+    </div>
+  </mat-card-content>
+</mat-card>
